@@ -189,6 +189,7 @@ const getAllTrades = async userId => {
       },
       include: [
         {
+          required: true,
           model: models.tickerSymbol,
           attributes: ["id", "name", "symbol"],
           through: { attributes: ["id", "amount", "shares", "type"] }
