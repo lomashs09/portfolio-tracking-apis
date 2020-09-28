@@ -29,6 +29,6 @@ module.exports = {
   sharesNotFound: {
     name: "CustomError",
     code: httpStatusCodes.BAD_REQUEST,
-    message: `not enough shares to sale, please try again`
+    message: `not enough shares to sell, please try again`
   }
 };

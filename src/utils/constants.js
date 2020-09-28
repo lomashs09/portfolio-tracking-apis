@@ -11,7 +11,7 @@ const AMOUNT_ERRORS = {
 
 const TRADE_TYPE = {
   buy: "BUY",
-  sale: "SALE"
+  sale: "SELL"
 };
 
 module.exports = {
