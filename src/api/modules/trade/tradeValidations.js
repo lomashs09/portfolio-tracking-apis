@@ -54,14 +54,11 @@ module.exports = {
         .required()
     },
     body: {
-      shares: Joi.number()
-        .positive()
-        .required(),
+      shares: Joi.number().positive(),
       amount: Joi.number()
         .positive()
         .precision(2)
         .strict()
-        .required()
         .error(errors => {
           errors.forEach(err => {
             switch (err.type) {

@@ -123,7 +123,7 @@ class Response {
       }
 
       obj.extra.stacks.push({
-        service: process.env.SERVICE_NAME,
+        app: process.env.APP_NAME || "portfolio-tracking-apis",
         stack: err.stack.split("\n")
       });
     }
